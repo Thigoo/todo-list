@@ -62,7 +62,24 @@ button {
     font-size: 1rem;
     cursor: pointer;
     margin-right: 0.5rem;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    background-color: #484848;
+}
+
+.fa-plus:hover {
+    color: #fafafa;
+}
+
+.fa-check:hover {
+    color: #1e731e;
+}
+
+.fa-trash:hover {
+    color: #a72424;
+}
+
+button:hover {
+    background-color: #616161;
 }
 
 #todo-list {
@@ -87,10 +104,15 @@ button {
 /* classe done pra quando estiver ativado o botão check */
 
 .done {
-    background-color: blanchedalmond;
+    background-color: #484848;
+    color: aliceblue;
 }
 
 .done p {
     text-decoration: line-through;
     font-style: italic;
+}
+
+.done button {
+    background-color: aliceblue;
 }

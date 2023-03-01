@@ -45,7 +45,13 @@ todoForm.addEventListener("submit", (e) => {
 document.addEventListener("click", (e) => {
 
     const targetElement = e.target;
-    if (targetElement.classList.contains("finish-todo")) {
-        console.log("clicou");
+    const parentElement = targetElement.closest("div");
+
+    if(targetElement.classList.contains("finish-todo")) {
+        parentElement.classList.toggle("done");
+    }
+
+    if(targetElement.classList.contains("remove-todo")) {
+        parentElement.remove();
     }
 })
